@@ -11,10 +11,6 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
       .when('/b/playerStats', {
         templateUrl: 'views/b/playerStats.html',
         controller: 'BLeaguePlayerStatsCtrl'
@@ -24,6 +20,6 @@ angular
         controller: 'ALeaguePlayerStatsCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/b/playerStats'
       });
   });
