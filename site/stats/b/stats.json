@@ -1,0 +1,431 @@
+{ "teams" :
+  [
+    {
+      "id": 1,
+      "league": "B",
+      "name": "Dekes of Hazard",
+      "players": [{
+        "name": "Ryan Carlson",
+        "number": 14,
+        "position": "D",
+        "goals": 0,
+        "assists": 1,
+        "pims": 0
+      },{
+        "name": "Nick Clark",
+        "number": 12,
+        "position": "F",
+        "goals": 3,
+        "assists": 2,
+        "pims": 0
+      },{
+        "name": "Ryan Kusev",
+        "number": 90,
+        "position": "F",
+        "goals": 3,
+        "assists": 0,
+        "pims": 0
+
+      },{
+        "name": "Chris Liseo",
+        "number": 72,
+        "position": "F",
+        "goals": 1,
+        "assists": 0,
+        "pims": 0
+
+      },{
+        "name": "Spencer Glick",
+        "number": 88,
+        "position": "F",
+        "goals": 1,
+        "assists": 0,
+        "pims": 0
+
+      },{
+        "name": "Sean Wissel",
+        "number": 17,
+        "position": "D",
+        "goals": 0,
+        "assists": 2,
+        "pims": 0
+
+      },{
+        "name": "Matt Wissel",
+        "number": 9,
+        "position": "D",
+        "goals": 0,
+        "assists": 1,
+        "pims": 0
+
+      },{
+        "name": "Chef Barbarow",
+        "number": 21,
+        "position": "D",
+        "goals": 0,
+        "assists": 2,
+        "pims": 0
+
+      },{
+        "name": "Steve Gernenz",
+        "number": 33,
+        "position": "G",
+        "shots": 12,
+        "saves": 12,
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+      }
+      ]
+    },
+    {
+      "id": 2,
+      "league": "B",
+      "name": "Puckaneers",
+      "players": [
+        {
+          "name": "Ryan LeJeune",
+          "number": 63,
+          "position": "F",
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Cody Smith",
+          "number": 23,
+          "position": "F",
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Steve Kleier",
+          "number": 19,
+          "position": "F",
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Steven Mercer",
+          "number": 37,
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Scott MacCord",
+          "number": 13,
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Brian Lloyd",
+          "number": 2,
+          "position": "D",
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Gabriel Maduro",
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Michael Fiumara",
+          "number": 53,
+          "position": "D",
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Gary Kleier",
+          "position": "G",
+          "shots": 24,
+          "saves": 16,
+          "pims": 0,
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "league": "B",
+      "name": "Great Scott",
+      "players": [
+        {
+          "name": "Mike Symons",
+          "number": 23,
+          "position": "F",
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Jason Shafer",
+          "number": 22,
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Adam Marino",
+          "number": 93,
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Akash Patel",
+          "number": 50,
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Roman Makarov",
+          "number": 12,
+          "goals": 0,
+          "assists": 1,
+          "pims": 0
+        },
+        {
+          "name": "?",
+          "number": 48,
+          "position": "D",
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "?",
+          "number": 17,
+          "goals": 1,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Josh Carp",
+          "number": 4,
+          "position": "D",
+          "goals": 0,
+          "assists": 0,
+          "pims": 4
+        },
+        {
+          "name": "Scott Symons",
+          "position": "G",
+          "shots": 13,
+          "saves": 4,
+          "pims": 0,
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "league": "B",
+      "name": "Czech Mates",
+      "players": [
+        {
+          "name": "Michal Homola",
+          "number": 99,
+          "position": "G",
+          "shots": 20,
+          "saves": 19,
+          "goals": 0,
+          "assists": 0,
+          "pims": 0
+        },
+        {
+          "name": "Jack Josko",
+          "number": 24,
+          "goals": 1,
+          "assists": 2,
+          "pims": 2
+        },
+        {
+          "name": "John Baselice",
+          "number": 11,
+          "goals": 4,
+          "assists": 1,
+          "pims": 0
+        },
+        {
+          "name": "Jake Hayden",
+          "number": 0,
+          "goals": 2,
+          "assists": 2,
+          "pims": 0
+        },
+        {
+          "name": "Eric Hayden",
+          "number": 5,
+          "goals": 2,
+          "assists": 2,
+          "pims": 0
+        },
+        {
+          "name": "Scott Chipner",
+          "number": 4,
+          "position": "D",
+          "goals": 0,
+          "assists": 1,
+          "pims": 0
+        }
+      ]
+    },{
+    "id": 3,
+    "league": "B",
+    "name": "Blanks",
+    "players": [
+      {
+        "name": "Kevin Scarpati",
+        "number": 7,
+        "position": "D",
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "Mark Caruso",
+        "number": 9,
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "Chris Jack",
+        "number": 47,
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "Justin Burkhardt",
+        "number": 55,
+        "goals": 1,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "Chris Heath",
+        "number": 97,
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "Jeff Hart",
+        "number": 52,
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "?",
+        "number": 95,
+        "goals": 0,
+        "assists": 0,
+        "pims": 2
+      },
+      {
+        "name": "Michal Homola",
+        "position": "G",
+        "shots": 15,
+        "saves": 12,
+        "pims": 0,
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+
+      }
+    ]
+  },{
+    "id": 6,
+    "league": "B",
+    "name": "Beer Me",
+    "players": [
+      {
+        "name": "Austin Francis",
+        "number": 32,
+        "position": "D",
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "Brett Dutton",
+        "number": 99,
+        "goals": 1,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "Randy Graves",
+        "number": 47,
+        "goals": 0,
+        "assists": 2,
+        "pims": 0
+      },
+      {
+        "name": "Tyler Thomas",
+        "number": 91,
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "Jonathan Sprague",
+        "number": 54,
+        "goals": 1,
+        "assists": 1,
+        "pims": 0
+      },
+      {
+        "name": "Matt Hudson",
+        "number": 92,
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "Nathan Marshall",
+        "number": 7,
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "Eric Taylor",
+        "number": 36,
+        "goals": 1,
+        "assists": 0,
+        "pims": 0
+      },
+      {
+        "name": "Gary Kleier",
+        "position": "G",
+        "shots": 17,
+        "saves": 16,
+        "pims": 0,
+        "goals": 0,
+        "assists": 0,
+        "pims": 0
+
+      }
+    ]
+  }
+  ]
+}

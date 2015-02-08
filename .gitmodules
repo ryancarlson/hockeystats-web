@@ -1,0 +1,4 @@
+[submodule "site/universal-hockey-stats"]
+	path = site/universal-hockey-stats
+	url = https://github.com/ryancarlson/universal-hockey-stats
+	branch = publish
