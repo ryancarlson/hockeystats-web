@@ -1,3 +1,11 @@
+<div class="header">
+    <ul class="nav nav-pills pull-right">
+        <li><a ng-href="#/b/playerStats">Player Stats - B</a></li>
+        <li class="active"><a ng-href="#/a/playerStats">Player Stats - A</a></li>
+    </ul>
+    <h3 class="text-muted">Universal Hockey Stats</h3>
+</div>
+
 <section ng-repeat="team in allStats.teams">
     <h1>{{team.name}}</h1>
     <h4>Skaters</h4>
