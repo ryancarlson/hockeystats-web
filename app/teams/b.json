@@ -1,0 +1,79 @@
+[{
+    "id": 1,
+    "league": "B",
+    "name": "Dekes of Hazard",
+    "players": [{
+        "name": "Ryan Carlson",
+        "number": 14,
+        "position": "D"
+    },{
+        "name": "Nick Clark",
+        "number": 12,
+        "position": "F"
+    },{
+        "name": "Ryan Kusev",
+        "number": 90,
+        "position": "F"
+    },{
+        "name": "Chris Liseo",
+        "number": 72,
+        "position": "F"
+    },{
+        "name": "Spencer Glick",
+        "number": 88,
+        "position": "F"
+    },{
+        "name": "Sean Wissel",
+        "number": 17,
+        "position": "D"
+    },{
+        "name": "Matt Wissel",
+        "number": 9,
+        "position": "D"
+    },{
+        "name": "Chef Barbarow",
+        "number": 21,
+        "position": "D"
+    },{
+        "name": "Steve Gernenz",
+        "number": 33,
+        "position": "G"
+    }
+    ]
+},{
+    "id": 2,
+    "league": "B",
+    "name": "Puckaneers",
+    "players":[{
+        "name": "Ryan LeJeuene",
+        "number": 63,
+        "position": "F"
+    },{
+        "name": "Cody Smith",
+        "number": 23,
+        "position": "F"
+    },{
+        "name": "Steve Kleier",
+        "number": 19,
+        "position": "F"
+    },{
+        "name": "Steven Mercer",
+        "number": 37
+    },{
+        "name": "Scott MacCord",
+        "number": 13
+    },{
+        "name": "Brian Lloyd",
+        "number": 2,
+        "position": "D"
+    },{
+        "name": "Gabriel Maduro"
+    },{
+        "name": "Michael Fiumara",
+        "number": 53,
+        "position": "D"
+    },{
+        "name": "Gary Kleier",
+        "position": "G"
+    }]
+}]

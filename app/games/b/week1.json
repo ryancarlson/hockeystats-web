@@ -1,0 +1,61 @@
+[
+    {
+        "homeTeam": 2,
+        "visitingTeam": 1,
+        "scoring": [
+            {
+                "team": 2,
+                "goal": 90,
+                "assists": [17],
+                "period": 1,
+                "time": "8:03"
+            },
+            {
+                "team": 2,
+                "goal": 72,
+                "assists": [9, 14],
+                "period": 1,
+                "time": "4:33"
+            },
+            {
+                "team": 2,
+                "goal": 88,
+                "period": 2,
+                "time:": "8:50"
+            },
+            {
+                "team": 2,
+                "goal": 90,
+                "assists": [12, 17],
+                "period": 2,
+                "time": "7:08"
+            },
+            {
+                "team": 2,
+                "goal": 12,
+                "period": 2,
+                "time": "2:56"
+            },
+            {
+                "team": 2,
+                "goal": 12,
+                "assists": [21],
+                "period": 2,
+                "time": "1:36"
+            },
+            {
+                "team": 2,
+                "goal": 12,
+                "assists": [21],
+                "period": 2,
+                "time": "1:03"
+            },
+            {
+                "team": 2,
+                "goal": 90,
+                "assists": [12],
+                "period": 3,
+                "time": "5:04"
+            }
+        ]}
+]

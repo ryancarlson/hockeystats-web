@@ -1,0 +1,41 @@
+<section ng-repeat="team in allStats.teams">
+    <h1>{{team.name}}</h1>
+    <h4>Skaters</h4>
+    <table class="table table-striped">
+        <tr>
+            <th><a href ng-click="sortField = 'number'">Number</a></th>
+            <th><a href ng-click="sortField = 'name'">Name</a></th>
+            <th><a href ng-click="sortField = '-goals'">G</a></th>
+            <th><a href ng-click="sortField = '-assists'">A</a></th>
+            <th><a href ng-click="sortField = '-points'">P</a></th>
+            <th><a href ng-click="sortField = '-pims'">PIM</a></th>
+        </tr>
+        <tr ng-repeat="player in team.players | orderBy: sortField">
+            <td>{{player.number}}</td>
+            <td>{{player.name}}</td>
+            <td>{{player.goals}}</td>
+            <td>{{player.assists}}</td>
+            <td>{{player.points}}</td>
+            <td>{{player.pims}}</td>
+        </tr>
+    </table>
+    <h4>Goalies</h4>
+    <table class="table table-striped">
+        <tr>
+        <th>Number</th>
+        <th>Name</th>
+        <th>Saves</th>
+        <th>Shots Against</th>
+        <th>GAA</th>
+        <th>Save %</th>
+        </tr>
+        <tr ng-repeat="goalie in team.players | filter: {position : 'G'}">
+            <td>{{goalie.number}}</td>
+            <td>{{goalie.name}}</td>
+            <td>{{goalie.saves}}</td>
+            <td>{{goalie.shots}}</td>
+            <td></td>
+            <td>{{goalie.saves / goalie.shots}}</td>
+        </tr>
+    </table>
+</section>
