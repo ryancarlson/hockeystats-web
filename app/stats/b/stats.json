@@ -257,7 +257,7 @@
         },
         {
           "name": "John Baselice",
-          "number": 93,
+          "number": 11,
           "goals": 4,
           "assists": 1,
           "pims": 0
@@ -265,7 +265,7 @@
         {
           "name": "Jake Hayden",
           "number": 0,
-          "goals": 0,
+          "goals": 2,
           "assists": 2,
           "pims": 0
         },
@@ -382,7 +382,7 @@
       {
         "name": "Tyler Thomas",
         "number": 91,
-        "goals": 1,
+        "goals": 0,
         "assists": 0,
         "pims": 0
       },
