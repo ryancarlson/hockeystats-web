@@ -11,15 +11,19 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/b/playerStats', {
-        templateUrl: 'views/b/playerStats.html',
-        controller: 'BLeaguePlayerStatsCtrl'
+      .when('/stats', {
+        templateUrl: 'views/stats.html',
+        controller: 'BLeagueCtrl'
+      })
+      .when('/standings', {
+        templateUrl: 'views/standings.html',
+        controller: 'BLeagueCtrl'
       })
       .when('/a/playerStats', {
         templateUrl: 'views/a/playerStats.html',
         controller: 'ALeaguePlayerStatsCtrl'
       })
       .otherwise({
-        redirectTo: '/b/playerStats'
+        redirectTo: '/stats'
       });
   });

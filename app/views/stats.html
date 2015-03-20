@@ -1,13 +1,17 @@
 <div class="header">
     <ul class="nav nav-pills pull-right">
-        <li class="active"><a ng-href="#/b/playerStats">Player Stats - B</a></li>
-        <li><a ng-href="#/a/playerStats">Player Stats - A</a></li>
+        <li><a ng-href="#/standings">Standings</a></li>
+        <li class="active"><a ng-href="#/stats">Statistics</a></li>
     </ul>
-    <h3 class="text-muted">Universal Hockey Stats</h3>
+    <h3 class="text-muted">Universal Roller Hockey</h3>
 </div>
-<section ng-repeat="team in allStats.teams">
-    <h1>{{team.name}}</h1>
-    <h4>Skaters</h4>
+
+<section>
+    <h1>Player Statistics</h1>
+    <label>Choose Team: </label>
+    <select class="form-control" ng-model="team" ng-options="teamer.name for teamer in allStats.teams">
+    </select><br/>
+
     <table class="table table-striped">
         <tr>
             <th><a href ng-click="sortField = 'number'">Number</a></th>
