@@ -1,9 +1,25 @@
 language: node_js
 node_js:
-  - '0.10'
+- '0.10'
 before_script:
-  - gem update --system
-  - 'npm install -g bower grunt-cli'
+- gem update --system
+- npm install -g bower grunt-cli
+env:
+  global:
+    secure: N4AI1rWYwkJg3XNjBFUh6pQhaUy+cZvZ3H/uMLTYyY3211eO+HSCbej6GWVPJd8DU0uYY48uAQdkjH3YMuvrqcUo1SWHfJ3V/9nHWho4cJbxCrlqYowrM9n4vj8KWD9T6hnEyKOdFLIriFKjdnBLBw+OJ4fQBkukVvnS4Mxoi10=
 script:
-  - bower install
-  - grunt
+- bower install
+- grunt
+after_success:
+- git submodule add -b publish https://${GH_OAUTH_TOKEN}@github.com/ryancarlson/universal-hockey-stats
+  site > /dev/null 2>&1
+- cd site
+- if git checkout publish; then git checkout -b publish; fi
+- git rm -r .
+- cp -R ../dist/* .
+- cp ../dist/.* .
+- git add -f .
+- git config user.name "ryancarlson"
+- git commit -am "publishing deployable project to publish [ci skip]"
+- git push https://${GH_OAUTH_TOKEN}@github.com/ryancarlson/universal-hockey-stats
+  HEAD:publish > /dev/null 2>&1
