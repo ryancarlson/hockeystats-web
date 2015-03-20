@@ -11,10 +11,10 @@ script:
 - bower install
 - grunt
 after_success:
-- git submodule add -b publish https://${GH_OAUTH_TOKEN}@github.com/ryancarlson/universal-hockey-stats
+- git submodule add -b publish-site https://${GH_OAUTH_TOKEN}@github.com/ryancarlson/universal-hockey-stats
   site > /dev/null 2>&1
 - cd site
-- if git checkout publish; then git checkout -b publish; fi
+- if git checkout publish-site; then git checkout -b publish-site; fi
 - git rm -r .
 - cp -R ../dist/* .
 - cp ../dist/.* .
@@ -22,4 +22,4 @@ after_success:
 - git config user.name "ryancarlson"
 - git commit -am "publishing deployable project to publish [ci skip]"
 - git push https://${GH_OAUTH_TOKEN}@github.com/ryancarlson/universal-hockey-stats
-  HEAD:publish > /dev/null 2>&1
+  HEAD:publish-site > /dev/null 2>&1
