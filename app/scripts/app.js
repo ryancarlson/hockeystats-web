@@ -24,6 +24,6 @@ angular
         controller: 'ALeaguePlayerStatsCtrl'
       })
       .otherwise({
-        redirectTo: '/stats'
+        redirectTo: '/standings'
       });
   });
