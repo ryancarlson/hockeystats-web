@@ -6,7 +6,7 @@ before_script:
 - npm install -g bower grunt-cli
 env:
   global:
-    secure: N4AI1rWYwkJg3XNjBFUh6pQhaUy+cZvZ3H/uMLTYyY3211eO+HSCbej6GWVPJd8DU0uYY48uAQdkjH3YMuvrqcUo1SWHfJ3V/9nHWho4cJbxCrlqYowrM9n4vj8KWD9T6hnEyKOdFLIriFKjdnBLBw+OJ4fQBkukVvnS4Mxoi10=
+    secure: "fRCP120N4dm7pH4B5ZIlp4eA83/52TAQGHca4tFk2QiY6OB745s9cLg8O+k+Ag/KtX4p+YBAKfGzPtpuIdenjyaBaj+2WtHFu96ZHZur0Rnm3q2Ms4noIRkE7OiOhiniAY6wZ+eBgIB74m4KVsSRNCaWJZWviXdTQTlIiRPXLbo="
 script:
 - bower install
 - grunt
