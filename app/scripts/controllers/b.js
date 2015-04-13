@@ -15,28 +15,28 @@ angular.module('universalHockeyApp')
           'id': 1,
           'league': 'B',
           'name': 'Dekes of Hazard',
-          'wins': 3,
-          'losses': 3,
+          'wins': 6,
+          'losses': 4,
           'sol': 0,
           'players': [{
             'name': 'Ryan Carlson',
             'number': 14,
             'position': 'D',
-            'goals': 0,
-            'assists': 4,
+            'goals': 1,
+            'assists': 7,
             'pims': 0
           },{
             'name': 'Nick Clark',
             'number': 12,
             'position': 'F',
-            'goals': 4,
-            'assists': 7,
-            'pims': 2
+            'goals': 5,
+            'assists': 10,
+            'pims': 4
           },{
             'name': 'Ryan Kusev',
             'number': 90,
             'position': 'F',
-            'goals': 7,
+            'goals': 11,
             'assists': 0,
             'pims': 0
 
@@ -44,40 +44,40 @@ angular.module('universalHockeyApp')
             'name': 'Chris Liseo',
             'number': 72,
             'position': 'F',
-            'goals': 3,
-            'assists': 3,
-            'pims': 0
+            'goals': 5,
+            'assists': 7,
+            'pims': 2
 
           },{
             'name': 'Spencer Glick',
             'number': 88,
             'position': 'F',
-            'goals': 4,
-            'assists': 0,
+            'goals': 8,
+            'assists': 3,
             'pims': 0
 
           },{
             'name': 'Sean Wissel',
             'number': 17,
             'position': 'D',
-            'goals': 3,
-            'assists': 6,
+            'goals': 4,
+            'assists': 7,
             'pims': 4
 
           },{
             'name': 'Matt Wissel',
             'number': 9,
             'position': 'D',
-            'goals': 1,
-            'assists': 4,
+            'goals': 2,
+            'assists': 8,
             'pims': 2
 
           },{
             'name': 'Chef Barbarow',
             'number': 21,
             'position': 'D',
-            'goals': 1,
-            'assists': 3,
+            'goals': 3,
+            'assists': 4,
             'pims': 0
 
           },{
@@ -85,14 +85,14 @@ angular.module('universalHockeyApp')
             'number': 30,
             'goals': 1,
             'assists': 1,
-            'pims': 5130
+            'pims': 7485
 
           },{
             'name': 'Steve Gernenz',
             'number': 33,
             'position': 'G',
-            'shots': 112,
-            'saves': 96,
+            'shots': 173,
+            'saves': 147,
             'goals': 0,
             'assists': 0,
             'pims': 2
@@ -103,7 +103,7 @@ angular.module('universalHockeyApp')
           'id': 2,
           'league': 'B',
           'name': 'Puckaneers',
-          'wins': 5,
+          'wins': 8,
           'losses': 1,
           'sol': 1,
           'players': [
@@ -112,16 +112,16 @@ angular.module('universalHockeyApp')
               'number': 63,
               'position': 'F',
               'goals': 3,
-              'assists': 3,
+              'assists': 7,
               'pims': 2
             },
             {
               'name': 'Cody Smith',
               'number': 23,
               'position': 'F',
-              'goals': 5,
-              'assists': 7,
-              'pims': 0
+              'goals': 9,
+              'assists': 10,
+              'pims': 9
             },
             {
               'name': 'Steve Kleier',
@@ -134,14 +134,14 @@ angular.module('universalHockeyApp')
             {
               'name': 'Steven Mercer',
               'number': 37,
-              'goals': 0,
+              'goals': 2,
               'assists': 1,
               'pims': 0
             },
             {
               'name': 'Scott MacCord',
               'number': 13,
-              'goals': 0,
+              'goals': 1,
               'assists': 1,
               'pims': 0
             },
@@ -157,23 +157,23 @@ angular.module('universalHockeyApp')
               'name': 'Gabriel Maduro',
               'number': 1,
               'position': 'F',
-              'goals': 16,
-              'assists': 7,
+              'goals': 20,
+              'assists': 12,
               'pims': 2
             },
             {
               'name': 'Michael Fiumara',
               'number': 53,
               'position': 'D',
-              'goals': 2,
-              'assists': 1,
+              'goals': 3,
+              'assists': 2,
               'pims': 2
             },
             {
               'name': 'Gary Kleier',
               'position': 'G',
-              'shots': 24,
-              'saves': 16,
+              'shots': 128,
+              'saves': 106,
               'goals': 0,
               'assists': 0,
               'pims': 0
@@ -185,16 +185,16 @@ angular.module('universalHockeyApp')
           'id': 3,
           'league': 'B',
           'name': 'Great Scott',
-          'wins': 1,
-          'losses': 6,
+          'wins': 2,
+          'losses': 8,
           'sol': 0,
           'players': [
             {
               'name': 'Mike Symons',
               'number': 23,
               'position': 'F',
-              'goals': 10,
-              'assists': 3,
+              'goals': 11,
+              'assists': 6,
               'pims': 4,
               'shots': 25,
               'saves': 14
@@ -223,9 +223,9 @@ angular.module('universalHockeyApp')
             {
               'name': 'Roman Makarov',
               'number': 12,
-              'goals': 2,
-              'assists': 6,
-              'pims': 0
+              'goals': 5,
+              'assists': 8,
+              'pims': 2
             },
             {
               'name': '?',
@@ -261,8 +261,8 @@ angular.module('universalHockeyApp')
             {
               'name': 'Scott Symons',
               'position': 'G',
-              'shots': 129,
-              'saves': 99,
+              'shots': 181,
+              'saves': 136,
               'goals': 0,
               'assists': 0,
               'pims': 0
@@ -275,7 +275,7 @@ angular.module('universalHockeyApp')
           'league': 'B',
           'name': 'Czech Mates',
           'wins': 5,
-          'losses': 1,
+          'losses': 5,
           'sol': 0,
           'players': [
             {
@@ -284,22 +284,22 @@ angular.module('universalHockeyApp')
               'position': 'G',
               'shots': 52,
               'saves': 48,
-              'goals': 1,
-              'assists': 1,
+              'goals': 2,
+              'assists': 2,
               'pims': 0
             },
             {
               'name': 'Jack Josko',
               'number': 24,
-              'goals': 7,
-              'assists': 5,
-              'pims': 2
+              'goals': 10,
+              'assists': 8,
+              'pims': 4
             },
             {
               'name': 'John Baselice',
               'number': 11,
-              'goals': 10,
-              'assists': 10,
+              'goals': 12,
+              'assists': 11,
               'pims': 0
             },
             {
@@ -334,8 +334,8 @@ angular.module('universalHockeyApp')
             },{
               'name': 'Ashley Roseman',
               'position': 'G',
-              'shots': 86,
-              'saves': 66,
+              'shots': 106,
+              'saves': 73,
               'goals': 0,
               'assists': 0,
               'pims': 0
@@ -345,32 +345,32 @@ angular.module('universalHockeyApp')
         'id': 5,
         'league': 'B',
         'name': 'Blanks',
-        'wins': 3,
-        'losses': 3,
-        'sol': 0,
+        'wins': 5,
+        'losses': 5,
+        'sol': 1,
         'players': [
           {
             'name': 'Kevin Scarpati',
             'number': 7,
             'position': 'D',
-            'goals': 8,
-            'assists': 5,
-            'pims': 0
+            'goals': 11,
+            'assists': 10,
+            'pims': 2
           },
           {
             'name': 'Mark Caruso',
             'number': 9,
             'position': 'D',
-            'goals': 1,
-            'assists': 10,
-            'pims': 0
+            'goals': 8,
+            'assists': 13,
+            'pims': 9
           },
           {
             'name': 'Chris Jack',
             'number': 47,
-            'goals': 6,
+            'goals': 7,
             'assists': 4,
-            'pims': 2
+            'pims': 4
           },
           {
             'name': 'Justin Burkhardt',
@@ -382,15 +382,15 @@ angular.module('universalHockeyApp')
           {
             'name': 'Chris Heath',
             'number': 97,
-            'goals': 3,
-            'assists': 1,
+            'goals': 4,
+            'assists': 3,
             'pims': 0
           },
           {
             'name': 'Jeff Hart',
             'number': 52,
-            'goals': 0,
-            'assists': 3,
+            'goals': 1,
+            'assists': 4,
             'pims': 0
           },
           {
@@ -401,29 +401,25 @@ angular.module('universalHockeyApp')
             'pims': 2
           },
           {
-            'name': 'Michal Homola (sub)',
-            'position': 'G',
-            'shots': 18,
-            'saves': 15,
-            'goals': 0,
-            'assists': 0,
+            'name':'Chris Fabian',
+            'number': 3,
+            'goals': 9,
+            'assists': 7,
             'pims': 0
           },
           {
-            'name': 'Mike Symons (sub)',
-            'position': 'G',
-            'shots': 22,
-            'saves': 18,
-            'goals': 0,
-            'assists': 0,
-            'pims': 0
+            'name':'Ryno (sub)',
+            'number':30,
+            'goals': 1,
+            'assists':3,
+            'pims':31513
           }
         ]
       },{
         'id': 6,
         'league': 'B',
         'name': 'Beer Me',
-        'wins': 6,
+        'wins': 9,
         'losses': 1,
         'sol': 0,
         'players': [
@@ -431,80 +427,71 @@ angular.module('universalHockeyApp')
             'name': 'Austin Francis',
             'number': 32,
             'position': 'D',
-            'goals': 1,
-            'assists': 4,
+            'goals': 2,
+            'assists': 7,
             'pims': 6
           },
           {
             'name': 'Brett Dutton',
             'number': 99,
-            'goals': 4,
+            'goals': 6,
             'assists': 2,
             'pims': 0
           },
           {
             'name': 'Randy Graves',
             'number': 47,
-            'goals': 0,
-            'assists': 2,
+            'goals': 6,
+            'assists': 7,
             'pims': 4
           },
           {
             'name': 'Tyler Thomas',
             'number': 91,
-            'goals': 1,
-            'assists': 3,
+            'goals': 2,
+            'assists': 7,
             'pims': 2
           },
           {
             'name': 'Jonathan Sprague',
             'number': 54,
-            'goals': 3,
-            'assists': 4,
-            'pims': 0
+            'goals': 4,
+            'assists': 5,
+            'pims': 2
           },
           {
             'name': 'Matt Hudson',
-            'number': 92,
+            'number': 19,
             'goals': 0,
             'assists': 0,
-            'pims': 0
+            'pims': 2
           },
           {
             'name': 'Nathan Marshall',
             'number': 7,
-            'goals': 1,
-            'assists': 3,
-            'pims': 0
+            'goals': 2,
+            'assists': 4,
+            'pims': 2
           },
           {
             'name': '?',
             'number': 27,
-            'goals': 11,
-            'assists': 7,
+            'goals': 13,
+            'assists': 8,
             'pims': 2
           },
           {
             'name': 'Eric Taylor',
             'number': 36,
-            'goals': 1,
+            'goals': 2,
             'assists': 1,
-            'pims': 0
-          },
-          {
-            'name': 'Gary Kleier (sub)',
-            'position': 'G',
-            'shots': 36,
-            'saves': 34,
-            'goals': 0,
-            'assists': 0,
             'pims': 0
           },
           {
             'name': 'Dan Hooks',
             'position': 'G',
-            'shots': 88,
-            'saves': 74,
+            'shots': 111,
+            'saves': 93,
             'goals': 0,
             'assists': 0,
             'pims': 0
@@ -515,7 +502,7 @@ angular.module('universalHockeyApp')
         'league': 'B',
         'name': 'UCF Black',
         'wins': 0,
-        'losses': 7,
+        'losses': 10,
         'sol': 0,
         'players': [
 
