@@ -13,11 +13,11 @@ angular
     $routeProvider
       .when('/stats', {
         templateUrl: 'views/stats.html',
-        controller: 'BLeagueCtrl'
+        controller: 'MainCtrl'
       })
       .when('/standings', {
         templateUrl: 'views/standings.html',
-        controller: 'BLeagueCtrl'
+        controller: 'MainCtrl'
       })
       .otherwise({
         redirectTo: '/standings'
