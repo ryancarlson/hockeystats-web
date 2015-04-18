@@ -28,9 +28,9 @@ angular.module('universalHockeyApp')
     var findTeam = function() {
       var teams;
 
-      if($scope.league === 'a') {
+      if($scope.league === 'A') {
         teams = $scope.aLeagueStats.teams;
-      } else if($scope.league === 'b') {
+      } else if($scope.league === 'B') {
         teams = $scope.bLeagueStats.teams;
       }
 

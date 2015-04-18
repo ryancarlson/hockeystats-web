@@ -16,7 +16,7 @@
             <th>Points</th>
         </tr>
         <tr ng-repeat="team in aLeagueStats.teams | orderBy: '-points'">
-            <td><a href="#/stats/a/{{team.id}}">{{team.name}}</a></td>
+            <td><a href="#/stats/{{team.league}}/{{team.id}}">{{team.name}}</a></td>
             <td>{{team.wins}}</td>
             <td>{{team.losses}}</td>
             <td>{{team.sol}}</td>
@@ -38,7 +38,7 @@
             <th>Points</th>
         </tr>
         <tr ng-repeat="team in bLeagueStats.teams | orderBy: '-points'">
-            <td><a href="#/stats/b/{{team.id}}">{{team.name}}</a></td>
+            <td><a href="#/stats/{{team.league}}/{{team.id}}">{{team.name}}</a></td>
             <td>{{team.wins}}</td>
             <td>{{team.losses}}</td>
             <td>{{team.sol}}</td>
