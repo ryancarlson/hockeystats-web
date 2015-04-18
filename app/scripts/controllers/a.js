@@ -1,26 +1,13 @@
 'use strict';
 
 angular.module('universalHockeyApp')
-  .controller('ALeagueCtrl', function ($scope, $http) {
+  .controller('ALeagueCtrl', function ($scope, $routeParams) {
 
-    $http.get('stats/a/stats.json').success(function(data) {
-      $scope.allStats = data;
-
-      _.each($scope.allStats.teams, function (team) {
-        _.each(team.players, function (player) {
-          player.points = player.goals + player.assists;
-          if(player.position === 'G') {
-            player.savePercentage = player.saves / player.shots;
-          }
-        })
-      })
-    });
-
-    $scope.sortField = '!goals';
+    $scope.sortField = '-points';
 
     $scope.setSortField = function (newSortField) {
       $scope.sortField = newSortField;
-    }
+    };
 
     $scope.allStats = { 'teams' :
       [
@@ -677,4 +664,20 @@ angular.module('universalHockeyApp')
       }
       ]
     };
+
+    _.each($scope.allStats.teams, function (team) {
+      _.each(team.players, function(player) {
+        player.points = player.goals + player.assists;
+      });
+      team.points = team.wins * 2 + team.sol;
+    });
+
+    $scope.team = _.find($scope.allStats.teams, function (team) {
+      if(angular.isDefined($routeParams.team)) {
+        return team.id === Number($routeParams.team);
+      } else {
+        return team.id === 1;
+      }
+    });
+
   });
