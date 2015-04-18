@@ -1,9 +1,13 @@
 'use strict';
 
 angular.module('universalHockeyApp')
-  .controller('MainCtrl', function ($scope, $http, $routeParams) {
+  .controller('MainCtrl', function ($scope, $http, $location, $routeParams, aLeagueStats, bLeagueStats) {
 
     $scope.sortField = '-points';
+    $scope.league = $routeParams.league;
+    $scope.teamId = Number($routeParams.teamId);
+    $scope.aLeagueStats = aLeagueStats;
+    $scope.bLeagueStats = bLeagueStats;
 
     $scope.setSortField = function (newSortField) {
       $scope.sortField = newSortField;
@@ -18,21 +22,33 @@ angular.module('universalHockeyApp')
       });
     };
 
-    $http.get('data/2015/spring/a.json').success(function (data) {
-      $scope.aLeagueStats = data;
-      calculatePoints($scope.aLeagueStats.teams);
-    });
+    calculatePoints($scope.aLeagueStats.teams);
+    calculatePoints($scope.bLeagueStats.teams);
 
-    $http.get('data/2015/spring/b.json').success(function (data) {
-      $scope.bLeagueStats = data;
-      calculatePoints($scope.bLeagueStats.teams);
-    });
+    var findTeam = function() {
+      var teams;
 
-//    $scope.team = _.find($scope.allStats.teams, function (team) {
-//      if(angular.isDefined($routeParams.team)) {
-//        return team.id === Number($routeParams.team);
-//      } else {
-//        return team.id === 1;
-//      }
-//    });
+      if($scope.league === 'a') {
+        teams = $scope.aLeagueStats.teams;
+      } else if($scope.league === 'b') {
+        teams = $scope.bLeagueStats.teams;
+      }
+
+      var foundTeam;
+
+      if(angular.isDefined($scope.teamId)) {
+        foundTeam = _.find(teams, function (team) {
+          return team.id === Number($scope.teamId);
+        });
+      }
+
+      return foundTeam;
+    };
+
+    $scope.team = findTeam();
+
+    $scope.updateTeam = function() {
+      $scope.apply();
+      $scope.team = findTeam();
+    }
   });

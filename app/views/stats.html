@@ -8,11 +8,25 @@
 
 <section>
     <h1>Player Statistics</h1>
-    <label>Choose Team: </label>
-    <select class="form-control" ng-model="team" ng-options="teamer.name for teamer in allStats.teams">
-    </select><br/>
+    <label>Choose League:</label>
+    <select class="form-control" ng-model="league">
+        <option value="a">A</option>
+        <option value="b">B</option>
+    </select>
 
-    <table class="table table-striped">
+    <section ng-if="league === 'a'">
+        <label>Choose Team: </label>
+        <select class="form-control" ng-model="team" ng-options="teamer.name for teamer in aLeagueStats.teams"></select>
+    </section>
+
+    <section ng-if="league === 'b'" >
+        <label>Choose Team: </label>
+        <select class="form-control" ng-model="team" ng-options="teamer.name for teamer in bLeagueStats.teams"></select>
+    </section>
+
+    <br/>
+
+    <table class="table table-striped" ng-show="team">
         <tr>
             <th><a href ng-click="sortField = 'number'">Number</a></th>
             <th><a href ng-click="sortField = 'name'">Name</a></th>
@@ -30,8 +44,8 @@
             <td>{{player.pims}}</td>
         </tr>
     </table>
-    <h4>Goalies</h4>
-    <table class="table table-striped">
+    <h4 ng-show="team">Goalies</h4>
+    <table class="table table-striped" ng-show="team">
         <tr>
         <th>Number</th>
         <th>Name</th>
