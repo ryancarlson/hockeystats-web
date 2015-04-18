@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('universalHockeyApp')
-  .controller('MainCtrl', function ($scope, $routeParams) {
+  .controller('MainCtrl', function ($scope, $http, $routeParams) {
 
     $scope.sortField = '-points';
 
@@ -18,21 +18,21 @@ angular.module('universalHockeyApp')
       });
     };
 
-    $http.get('/app/data/spring/2015/a.json').success(function (data) {
+    $http.get('data/2015/spring/a.json').success(function (data) {
       $scope.aLeagueStats = data;
       calculatePoints($scope.aLeagueStats.teams);
     });
 
-    $http.get('/app/data/spring/2015/b.json').success(function (data) {
+    $http.get('data/2015/spring/b.json').success(function (data) {
       $scope.bLeagueStats = data;
       calculatePoints($scope.bLeagueStats.teams);
     });
 
-    $scope.team = _.find($scope.allStats.teams, function (team) {
-      if(angular.isDefined($routeParams.team)) {
-        return team.id === Number($routeParams.team);
-      } else {
-        return team.id === 1;
-      }
-    });
+//    $scope.team = _.find($scope.allStats.teams, function (team) {
+//      if(angular.isDefined($routeParams.team)) {
+//        return team.id === Number($routeParams.team);
+//      } else {
+//        return team.id === 1;
+//      }
+//    });
   });
