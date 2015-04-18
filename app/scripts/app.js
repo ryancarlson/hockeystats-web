@@ -19,10 +19,6 @@ angular
         templateUrl: 'views/standings.html',
         controller: 'BLeagueCtrl'
       })
-      .when('/a/playerStats', {
-        templateUrl: 'views/a/playerStats.html',
-        controller: 'ALeaguePlayerStatsCtrl'
-      })
       .otherwise({
         redirectTo: '/standings'
       });

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('universalHockeyApp')
-  .controller('ALeaguePlayerStatsCtrl', function ($scope, $http) {
+  .controller('ALeagueCtrl', function ($scope, $http) {
 
     $http.get('stats/a/stats.json').success(function(data) {
       $scope.allStats = data;
