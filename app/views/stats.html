@@ -8,23 +8,9 @@
 
 <section>
     <h1>Player Statistics</h1>
-    <label>Choose League:</label>
-    <select class="form-control" ng-model="league">
-        <option value="A">A</option>
-        <option value="B">B</option>
-    </select>
 
-    <section ng-if="league === 'A'">
-        <label>Choose Team: </label>
-        <select class="form-control" ng-model="team" ng-options="teamer.name for teamer in aLeagueStats.teams"></select>
-    </section>
-
-    <section ng-if="league === 'B'" >
-        <label>Choose Team: </label>
-        <select class="form-control" ng-model="team" ng-options="teamer.name for teamer in bLeagueStats.teams"></select>
-    </section>
-
-    <br/>
+    <label>Team:</label>
+    <select class="form-control" ng-model="team" ng-options="teamOption.name group by teamOption.league for teamOption in players.teams"> </select>
 
     <table class="table table-striped" ng-show="team">
         <tr>
@@ -64,5 +50,5 @@
             <td>{{goalie.saves / goalie.shots}}</td>
         </tr>
     </table>
-    <section class="footer">Unofficial stats as of 4/13/15, excluding games played on 3/15/15</section>
+    <section class="footer">Unofficial stats as of 4/13/15, two weeks of A, and one of B league games are missing. </section>
 </section>

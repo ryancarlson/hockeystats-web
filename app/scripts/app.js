@@ -11,60 +11,13 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/stats', {
+      .when('/stats/:teamId', {
         templateUrl: 'views/stats.html',
         controller: 'MainCtrl',
         resolve: {
-          aLeagueStats : ['$http','$q',function($http, $q){
+          players : ['$http','$q',function($http, $q){
             var stats = $q.defer();
-            $http.get('data/2015/spring/a.json').success(function (data) {
-              stats.resolve(data);
-            });
-            return stats.promise;
-          }],
-          bLeagueStats : ['$http','$q', function($http, $q) {
-            var stats = $q.defer();
-            $http.get('data/2015/spring/b.json').success(function (data) {
-              stats.resolve(data);
-            });
-            return stats.promise;
-          }]
-        }
-      })
-      .when('/stats/:league', {
-        templateUrl: 'views/stats.html',
-        controller: 'MainCtrl',
-        resolve: {
-          aLeagueStats : ['$http','$q',function($http, $q){
-            var stats = $q.defer();
-            $http.get('data/2015/spring/a.json').success(function (data) {
-              stats.resolve(data);
-            });
-            return stats.promise;
-          }],
-          bLeagueStats : ['$http','$q', function($http, $q) {
-            var stats = $q.defer();
-            $http.get('data/2015/spring/b.json').success(function (data) {
-              stats.resolve(data);
-            });
-            return stats.promise;
-          }]
-        }
-      })
-      .when('/stats/:league/:teamId', {
-        templateUrl: 'views/stats.html',
-        controller: 'MainCtrl',
-        resolve: {
-          aLeagueStats : ['$http','$q',function($http, $q){
-            var stats = $q.defer();
-            $http.get('data/2015/spring/a.json').success(function (data) {
-              stats.resolve(data);
-            });
-            return stats.promise;
-          }],
-          bLeagueStats : ['$http','$q', function($http, $q) {
-            var stats = $q.defer();
-            $http.get('data/2015/spring/b.json').success(function (data) {
+            $http.get('data/2015/spring/players.json').success(function (data) {
               stats.resolve(data);
             });
             return stats.promise;
@@ -75,16 +28,9 @@ angular
         templateUrl: 'views/standings.html',
         controller: 'MainCtrl',
         resolve: {
-          aLeagueStats : ['$http','$q',function($http, $q){
+          players : ['$http','$q',function($http, $q){
             var stats = $q.defer();
-            $http.get('data/2015/spring/a.json').success(function (data) {
-              stats.resolve(data);
-            });
-            return stats.promise;
-          }],
-          bLeagueStats : ['$http','$q', function($http, $q) {
-            var stats = $q.defer();
-            $http.get('data/2015/spring/b.json').success(function (data) {
+            $http.get('data/2015/spring/players.json').success(function (data) {
               stats.resolve(data);
             });
             return stats.promise;

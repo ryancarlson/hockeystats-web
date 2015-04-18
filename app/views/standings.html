@@ -1,12 +1,13 @@
 <div class="header">
     <ul class="nav nav-pills pull-right">
         <li class="active"><a ng-href="#/standings">Standings</a></li>
-        <li><a ng-href="#/stats">Statistics</a></li>
+        <li><a ng-href="#/stats/0">Statistics</a></li>
     </ul>
     <h3 class="text-muted">Universal Roller Hockey</h3>
 </div>
+<h1>Standings</h1>
 <section>
-    <h1>A League Standings</h1>
+    <h3>A League</h3>
     <table class="table table-striped">
         <tr>
             <th>Team</th>
@@ -15,20 +16,18 @@
             <th>Shootout Losses</th>
             <th>Points</th>
         </tr>
-        <tr ng-repeat="team in aLeagueStats.teams | orderBy: '-points'">
-            <td><a href="#/stats/{{team.league}}/{{team.id}}">{{team.name}}</a></td>
+        <tr ng-repeat="team in players.teams | filter: {league : 'A'} | orderBy: '-points'">
+            <td><a href="#/stats/{{team.id}}">{{team.name}}</a></td>
             <td>{{team.wins}}</td>
             <td>{{team.losses}}</td>
             <td>{{team.sol}}</td>
             <td>{{team.points}}</td>
         </tr>
     </table>
-
-    <section class="footer">Unofficial standings as of 4/13/15</section>
 </section>
 
 <section>
-    <h1>B League Standings</h1>
+    <h3>B League</h3>
     <table class="table table-striped">
         <tr>
             <th>Team</th>
@@ -37,8 +36,8 @@
             <th>Shootout Losses</th>
             <th>Points</th>
         </tr>
-        <tr ng-repeat="team in bLeagueStats.teams | orderBy: '-points'">
-            <td><a href="#/stats/{{team.league}}/{{team.id}}">{{team.name}}</a></td>
+        <tr ng-repeat="team in players.teams | filter: {league : 'B'} | orderBy: '-points'">
+            <td><a href="#/stats/{{team.id}}">{{team.name}}</a></td>
             <td>{{team.wins}}</td>
             <td>{{team.losses}}</td>
             <td>{{team.sol}}</td>
