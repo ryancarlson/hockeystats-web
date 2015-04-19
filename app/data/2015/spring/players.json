@@ -4,8 +4,8 @@
       "id": 1,
       "league": "A",
       "name": "Warriors",
-      "wins": 9,
-      "losses": 2,
+      "wins": 5,
+      "losses": 3,
       "sol": 0,
       "players": [{
         "name": "Matt Lind",
@@ -90,8 +90,8 @@
       "id": 2,
       "league": "A",
       "name": "Hitmen",
-      "wins": 3,
-      "losses": 6,
+      "wins": 2,
+      "losses": 4,
       "sol": 1,
       "players": [
         {
@@ -166,8 +166,8 @@
       "id": 3,
       "league": "A",
       "name": "Alumknights",
-      "wins": 2,
-      "losses": 8,
+      "wins": 3,
+      "losses": 5,
       "sol": 1,
       "players": [
         {
@@ -285,8 +285,8 @@
       "league": "A",
       "name": "UCF Gold",
       "wins": 7,
-      "losses": 2,
-      "sol": 1,
+      "losses": 1,
+      "sol": 0,
       "players": [
         {
           "name": "Shane Tamaddon",
@@ -386,8 +386,8 @@
     "id": 5,
     "league": "A",
     "name": "UCF Czechs",
-    "wins": 6,
-    "losses": 4,
+    "wins": 4,
+    "losses": 3,
     "sol": 0,
     "players": [
       {
@@ -469,8 +469,8 @@
     "id": 6,
     "league": "A",
     "name": "Alter Boyles",
-    "wins": 7,
-    "losses": 3,
+    "wins": 6,
+    "losses": 2,
     "sol": 0,
     "players": [
       {
@@ -579,7 +579,7 @@
     "id": 7,
     "league": "A",
     "name": "Misfits",
-    "wins": 2,
+    "wins": 1,
     "losses": 8,
     "sol": 0,
     "players": [
