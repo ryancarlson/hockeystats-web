@@ -24,5 +24,5 @@ angular.module('universalHockeyApp')
 
     $scope.team = _.find($scope.players.teams, function(team){
       return team.id === $scope.teamId;
-    })
+    });
   });
