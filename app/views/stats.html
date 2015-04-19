@@ -8,11 +8,11 @@
 
 <section>
     <h1>Player Statistics</h1>
-    <label>Choose Team: </label>
-    <select class="form-control" ng-model="team" ng-options="teamer.name for teamer in allStats.teams">
-    </select><br/>
 
-    <table class="table table-striped">
+    <label>Team:</label>
+    <select class="form-control" ng-model="team" ng-options="teamOption.name group by teamOption.league for teamOption in players.teams"> </select>
+
+    <table class="table table-striped" ng-show="team">
         <tr>
             <th><a href ng-click="sortField = 'number'">Number</a></th>
             <th><a href ng-click="sortField = 'name'">Name</a></th>
@@ -30,8 +30,9 @@
             <td>{{player.pims}}</td>
         </tr>
     </table>
-    <h4>Goalies</h4>
-    <table class="table table-striped">
+
+    <h4 ng-show="team">Goalies</h4>
+    <table class="table table-striped" ng-show="team">
         <tr>
         <th>Number</th>
         <th>Name</th>
@@ -49,6 +50,5 @@
             <td>{{goalie.saves / goalie.shots}}</td>
         </tr>
     </table>
-
-    <section class="footer">Unofficial stats as of 4/13/15, excluding games played on 3/15/15</section>
+    <section class="footer">Unofficial stats as of 4/13/15, two weeks of A, and one of B league games are missing. </section>
 </section>
