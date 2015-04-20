@@ -451,7 +451,7 @@
         "number": 24,
         "goals": 3,
         "assists": 1,
-        "pims": 2
+        "pims": 4
       },
       {
         "name": "Michal Homola",
@@ -663,23 +663,23 @@
         "number": 14,
         "position": "D",
         "goals": 1,
-        "assists": 7,
+        "assists": 8,
         "pims": 0
       },
       {
         "name": "Nick Clark",
         "number": 12,
         "position": "F",
-        "goals": 5,
-        "assists": 10,
+        "goals": 8,
+        "assists": 11,
         "pims": 4
       },
       {
         "name": "Ryan Kusev",
         "number": 90,
         "position": "F",
-        "goals": 11,
-        "assists": 0,
+        "goals": 13,
+        "assists": 2,
         "pims": 0
 
       },
@@ -687,8 +687,8 @@
         "name": "Chris Liseo",
         "number": 72,
         "position": "F",
-        "goals": 5,
-        "assists": 7,
+        "goals": 6,
+        "assists": 9,
         "pims": 2
 
       },
@@ -696,7 +696,7 @@
         "name": "Spencer Glick",
         "number": 88,
         "position": "F",
-        "goals": 8,
+        "goals": 9,
         "assists": 3,
         "pims": 0
 
@@ -706,7 +706,7 @@
         "number": 17,
         "position": "D",
         "goals": 4,
-        "assists": 7,
+        "assists": 9,
         "pims": 4
 
       },
@@ -714,8 +714,8 @@
         "name": "Matt Wissel",
         "number": 9,
         "position": "D",
-        "goals": 2,
-        "assists": 8,
+        "goals": 5,
+        "assists": 9,
         "pims": 2
 
       },
@@ -740,8 +740,8 @@
         "name": "Steve Gernenz",
         "number": 33,
         "position": "G",
-        "shots": 173,
-        "saves": 147,
+        "shots": 191,
+        "saves": 151,
         "goals": 0,
         "assists": 0,
         "pims": 2
@@ -760,17 +760,17 @@
           "name": "Ryan LeJeune",
           "number": 63,
           "position": "F",
-          "goals": 3,
-          "assists": 7,
+          "goals": 5,
+          "assists": 8,
           "pims": 2
         },
         {
           "name": "Cody Smith",
           "number": 23,
           "position": "F",
-          "goals": 9,
-          "assists": 10,
-          "pims": 9
+          "goals": 10,
+          "assists": 11,
+          "pims": 11
         },
         {
           "name": "Steve Kleier",
@@ -821,8 +821,8 @@
         {
           "name": "Gary Kleier",
           "position": "G",
-          "shots": 128,
-          "saves": 106,
+          "shots": 157,
+          "saves": 132,
           "goals": 0,
           "assists": 0,
           "pims": 0
@@ -842,8 +842,8 @@
           "name": "Mike Symons",
           "number": 23,
           "position": "F",
-          "goals": 11,
-          "assists": 6,
+          "goals": 13,
+          "assists": 9,
           "pims": 4,
           "shots": 25,
           "saves": 14
@@ -873,7 +873,7 @@
           "name": "Roman Makarov",
           "number": 12,
           "goals": 5,
-          "assists": 8,
+          "assists": 9,
           "pims": 2
         },
         {
@@ -887,16 +887,16 @@
         {
           "name": "?",
           "number": 17,
-          "goals": 1,
-          "assists": 2,
+          "goals": 3,
+          "assists": 5,
           "pims": 0
         },
         {
           "name": "Josh Carp",
           "number": 4,
           "position": "D",
-          "goals": 2,
-          "assists": 1,
+          "goals": 5,
+          "assists": 2,
           "pims": 10
         },
         {
@@ -910,8 +910,8 @@
         {
           "name": "Scott Symons",
           "position": "G",
-          "shots": 181,
-          "saves": 136,
+          "shots": 198,
+          "saves": 149,
           "goals": 0,
           "assists": 0,
           "pims": 0
@@ -933,35 +933,35 @@
           "position": "G",
           "shots": 52,
           "saves": 48,
-          "goals": 2,
-          "assists": 2,
+          "goals": 3,
+          "assists": 3,
           "pims": 0
         },
         {
           "name": "Jack Josko",
           "number": 24,
-          "goals": 10,
-          "assists": 8,
+          "goals": 11,
+          "assists": 11,
           "pims": 4
         },
         {
           "name": "John Baselice",
           "number": 11,
-          "goals": 12,
+          "goals": 14,
           "assists": 11,
           "pims": 0
         },
         {
           "name": "Jake Hayden",
           "number": 0,
-          "goals": 5,
-          "assists": 5,
+          "goals": 7,
+          "assists": 7,
           "pims": 0
         },
         {
           "name": "Eric Hayden",
           "number": 5,
-          "goals": 7,
+          "goals": 8,
           "assists": 4,
           "pims": 0
         },
@@ -982,10 +982,18 @@
           "pims": 2
         },
         {
+          "name": "Alex Graham",
+          "number": 48,
+          "position": "D",
+          "goals": 1,
+          "assists": 2,
+          "pims": 2
+        },
+        {
           "name": "Ashley Roseman",
           "position": "G",
-          "shots": 106,
-          "saves": 73,
+          "shots": 168,
+          "saves": 113,
           "goals": 0,
           "assists": 0,
           "pims": 0
@@ -1004,8 +1012,8 @@
           "name": "Kevin Scarpati",
           "number": 7,
           "position": "D",
-          "goals": 11,
-          "assists": 10,
+          "goals": 12,
+          "assists": 11,
           "pims": 2
         },
         {
@@ -1020,21 +1028,21 @@
           "name": "Chris Jack",
           "number": 47,
           "goals": 7,
-          "assists": 4,
-          "pims": 4
+          "assists": 5,
+          "pims": 6
         },
         {
           "name": "Justin Burkhardt",
           "number": 55,
-          "goals": 3,
+          "goals": 4,
           "assists": 3,
-          "pims": 0
+          "pims": 2
         },
         {
           "name": "Chris Heath",
           "number": 97,
           "goals": 4,
-          "assists": 3,
+          "assists": 6,
           "pims": 0
         },
         {
@@ -1054,7 +1062,7 @@
         {
           "name": "Chris Fabian",
           "number": 3,
-          "goals": 9,
+          "goals": 10,
           "assists": 7,
           "pims": 0
         },
@@ -1079,14 +1087,14 @@
           "name": "Austin Francis",
           "number": 32,
           "position": "D",
-          "goals": 2,
-          "assists": 7,
+          "goals": 4,
+          "assists": 8,
           "pims": 6
         },
         {
           "name": "Brett Dutton",
           "number": 99,
-          "goals": 6,
+          "goals": 9,
           "assists": 2,
           "pims": 0
         },
@@ -1100,14 +1108,14 @@
         {
           "name": "Tyler Thomas",
           "number": 91,
-          "goals": 2,
-          "assists": 7,
+          "goals": 3,
+          "assists": 12,
           "pims": 2
         },
         {
           "name": "Jonathan Sprague",
           "number": 54,
-          "goals": 4,
+          "goals": 7,
           "assists": 5,
           "pims": 2
         },
@@ -1121,29 +1129,29 @@
         {
           "name": "Nathan Marshall",
           "number": 7,
-          "goals": 2,
-          "assists": 4,
+          "goals": 3,
+          "assists": 5,
           "pims": 2
         },
         {
           "name": "?",
           "number": 27,
-          "goals": 13,
-          "assists": 8,
+          "goals": 15,
+          "assists": 11,
           "pims": 2
         },
         {
           "name": "Eric Taylor",
           "number": 36,
           "goals": 2,
-          "assists": 1,
-          "pims": 0
+          "assists": 3,
+          "pims": 2
         },
         {
           "name": "Dan Hooks",
           "position": "G",
-          "shots": 111,
-          "saves": 93,
+          "shots": 135,
+          "saves": 113,
           "goals": 0,
           "assists": 0,
           "pims": 0
