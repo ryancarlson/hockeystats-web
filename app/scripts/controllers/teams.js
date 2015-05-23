@@ -2,7 +2,23 @@
 
 angular.module('universalHockeyApp')
   .controller('TeamsCtrl', function ($scope, TeamService) {
-    TeamService.loadById('cb505831-b061-47bd-9a8b-c5551855c0f9').then(function(team){
-      $scope.dekes = team;
-    });
+
+    $scope.addNewTeam = function() {
+      $scope.newTeam = {
+        players: [{}]
+      };
+    };
+
+    $scope.addPlayerToTeam = function () {
+      $scope.newTeam.players.push({});
+    };
+
+    $scope.saveNewTeam = function() {
+      TeamService.saveNewTeam($scope.newTeam);
+      delete $scope.newTeam;
+    };
+
+    $scope.cancelAddNewTeam = function () {
+      delete $scope.newTeam;
+    };
   });

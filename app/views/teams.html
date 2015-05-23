@@ -3,6 +3,21 @@
 </div>
 
 <div>
-    <h3>{{dekes.name}}</h3>
-    <h3>{{dekes.league}}</h3>
+  <button class="btn btn-success" ng-click="addNewTeam()">Add Team</button>
+
+  <formset ng-show="newTeam">
+    <label>Name</label>
+    <input class="form-control" type="text" ng-model="newTeam.name"/>
+
+    <label>League</label>
+    <input class="form-control" type="text" ng-model="newTeam.league"/>
+
+    <h4>Skaters</h4>
+
+    <player-editor ng-repeat="newPlayer in newTeam.players" player="newPlayer"></player-editor>
+
+    <button ng-click="addPlayerToTeam()">Add Another Skater</button>
+    <button class="btn btn-success" ng-click="saveNewTeam()">Save</button>
+    <a href ng-click="cancelAddNewTeam()">Cancel</a>
+  </formset>
 </div>

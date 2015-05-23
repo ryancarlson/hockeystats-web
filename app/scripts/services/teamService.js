@@ -15,4 +15,11 @@ angular.module('universalHockeyApp')
 
       return deferredTeam.promise;
     };
+
+    this.saveNewTeam = function(team) {
+      $http.post('http://localhost:8080/hockeystats-api-1.0-SNAPSHOT/rest/teams', team)
+        .success(function(data){
+
+        });
+    };
   });
