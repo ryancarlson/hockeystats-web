@@ -25,6 +25,10 @@ angular
 
         }
       })
+      .when('/teams', {
+        templateUrl: '/views/teams.html',
+        controller: 'TeamsCtrl'
+      })
       .otherwise({
         redirectTo: '/standings'
       });
