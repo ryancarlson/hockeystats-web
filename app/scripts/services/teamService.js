@@ -37,4 +37,8 @@ angular.module('universalHockeyApp')
 
       return deferredSave.promise;
     };
+
+    this.deleteTeam = function(team) {
+      $http.delete(apiUrl + "/teams/" + team.id);
+    }
   });

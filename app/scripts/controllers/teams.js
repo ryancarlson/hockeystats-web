@@ -35,4 +35,9 @@ angular.module('universalHockeyApp')
     $scope.cancelAddNewTeam = function () {
       delete $scope.newTeam;
     };
+
+    $scope.deleteTeam = function(team) {
+      TeamService.deleteTeam(team);
+      $scope.selectedTeam = null;
+    }
   });
