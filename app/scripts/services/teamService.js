@@ -17,9 +17,6 @@ angular.module('universalHockeyApp')
     };
 
     this.saveNewTeam = function(team) {
-      $http.post(apiUrl + '/teams', team)
-        .success(function(data){
-
-        });
+      $http.post(apiUrl + '/teams', team);
     };
   });
