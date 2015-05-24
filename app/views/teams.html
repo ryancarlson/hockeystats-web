@@ -4,11 +4,11 @@
 
 <div>
   <h4> Current Teams</h4>
-  <ul class="list-group">
-    <li ng-repeat="team in teams | orderBy: ['league','name']"
+  <div class="list-group">
+    <a href ng-repeat="team in teams | orderBy: ['league','name']"
         ng-click="viewTeam(team)"
-        class="list-group-item">{{team.league}} - {{team.name}}</li>
-  </ul>
+        class="list-group-item">{{team.league}} - {{team.name}}</a>
+  </div>
 
   <button class="btn btn-success" ng-click="addNewTeam()">Add Team</button>
 
