@@ -21,7 +21,13 @@
     </ul>
 
     <br />
-    <a href ng-click="selectedTeam = null">Hide</a>
+    <div class="row">
+      <div class="col-lg-9">
+      </div>
+      <div class="col-lg-3">
+        <button class="btn btn-danger" ng-click="deleteTeam(selectedTeam)">Remove</button> <a href ng-click="selectedTeam = null">Hide</a>
+      </div>
+    </div>
   </div>
 
   <div ng-show="newTeam">
@@ -36,9 +42,7 @@
     </div>
 
     <h4>Skaters</h4>
-
-        <player-editor ng-repeat="newPlayer in newTeam.players" player="newPlayer"></player-editor>
-
+    <player-editor ng-repeat="newPlayer in newTeam.players" player="newPlayer"></player-editor>
     <br />
 
     <div class="row">
