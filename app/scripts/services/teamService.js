@@ -3,6 +3,17 @@
 angular.module('universalHockeyApp')
   .service('TeamService', function TeamService($http, $q, apiUrl, uuid) {
 
+    this.loadAll = function() {
+      var deferred = $q.defer();
+
+      $http.get(apiUrl + '/teams/')
+        .success(function(data){
+          deferred.resolve(data);
+        });
+
+      return deferred.promise;
+    };
+
     this.loadById = function(teamId) {
       var deferredTeam = $q.defer();
 
