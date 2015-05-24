@@ -12,6 +12,7 @@ angular.module('universalHockeyApp')
     };
 
     $scope.addNewTeam = function() {
+      $scope.selectedTeam = null;
       $scope.newTeam = {
         players: [{}]
       };
