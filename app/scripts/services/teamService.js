@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('universalHockeyApp')
-  .service('TeamService', function TeamService($http, $q, apiUrl) {
+  .service('TeamService', function TeamService($http, $q, apiUrl, uuid) {
 
     this.loadById = function(teamId) {
       var deferredTeam = $q.defer();
@@ -17,6 +17,7 @@ angular.module('universalHockeyApp')
     };
 
     this.saveNewTeam = function(team) {
+      team.id = uuid;
       $http.post(apiUrl + '/teams', team);
     };
   });
