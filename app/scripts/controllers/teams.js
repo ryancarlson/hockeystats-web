@@ -15,6 +15,9 @@ angular.module('universalHockeyApp')
 
     $scope.saveNewTeam = function() {
       TeamService.saveNewTeam($scope.newTeam);
+      _.each($scope.newTeam.players, function(player){
+
+      });
       delete $scope.newTeam;
     };
 
