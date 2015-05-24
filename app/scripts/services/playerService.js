@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('universalHockeyApp')
-  .service('PlayerService', function TeamService($http, $q, apiUrl) {
+  .service('PlayerService', function PlayerService($http, $q, apiUrl) {
 
-    var saveNewPlayer = function(player, teamId) {
+    this.saveNewPlayer = function(player, teamId) {
       $http.post(apiUrl + '/teams/' + teamId + '/players', player);
     };
   });
