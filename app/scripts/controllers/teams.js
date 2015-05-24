@@ -14,11 +14,13 @@ angular.module('universalHockeyApp')
     };
 
     $scope.saveNewTeam = function() {
-      TeamService.saveNewTeam($scope.newTeam);
-      _.each($scope.newTeam.players, function(player){
-        PlayerService.saveNewPlayer(player, $scope.newTeam.id);
+      TeamService.saveNewTeam($scope.newTeam).then(function() {
+        _.each($scope.newTeam.players, function(player){
+          PlayerService.saveNewPlayer(player, $scope.newTeam.id);
+        });
+        delete $scope.newTeam;
+
       });
-      delete $scope.newTeam;
     };
 
     $scope.cancelAddNewTeam = function () {

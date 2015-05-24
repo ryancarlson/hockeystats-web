@@ -17,7 +17,13 @@ angular.module('universalHockeyApp')
     };
 
     this.saveNewTeam = function(team) {
-      team.id = uuid;
-      $http.post(apiUrl + '/teams', team);
+      team.id = uuid();
+      var deferredSave = $q.defer();
+      $http.post(apiUrl + '/teams', team)
+        .success(function(){
+          deferredSave.resolve();
+        });
+
+      return deferredSave.promise;
     };
   });
