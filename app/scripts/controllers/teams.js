@@ -3,6 +3,14 @@
 angular.module('universalHockeyApp')
   .controller('TeamsCtrl', function ($scope, TeamService, PlayerService) {
 
+    TeamService.loadAll().then(function(teams){
+      $scope.teams = teams;
+    });
+
+    $scope.viewTeam = function(team) {
+      $scope.selectedTeam = team;
+    };
+
     $scope.addNewTeam = function() {
       $scope.newTeam = {
         players: [{}]
