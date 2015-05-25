@@ -20,45 +20,32 @@
 
   <br />
 
-  <div class="well" ng-show="selectedTeam">
-    <h4>{{selectedTeam.name}}</h4>
-    <ul class="list-group">
-      <li ng-repeat=" player in selectedTeam.players | orderBy: 'name'" class="list-group-item">{{player.number}} - {{player.name}} ({{player.position}})</li>
-    </ul>
-
-    <br />
-    <div class="row">
-      <div class="col-lg-9">
-      </div>
-      <div class="col-lg-3">
-        <button class="btn btn-danger" ng-click="deleteTeam(selectedTeam)">Remove</button> <a href ng-click="selectedTeam = null">Hide</a>
-      </div>
-    </div>
-  </div>
-
-  <div ng-show="newTeam">
+  <div ng-show="activeTeam">
     <h4>Team Information</h4>
     <div class="form-group">
       <label>Name</label>
-      <input class="form-control" type="text" ng-model="newTeam.name"/>
+      <input class="form-control" type="text" ng-model="activeTeam.name"/>
     </div>
 
     <div class="form-group">
-      <label>Players</label>
-      <input class="form-control" type="text" ng-model="newTeam.league"/>
+      <label>League</label>
+      <input class="form-control" type="text" ng-model="activeTeam.league"/>
     </div>
 
-    <h4>Skaters</h4>
-    <player-editor ng-repeat="newPlayer in newTeam.players" player="newPlayer"></player-editor>
+    <h4>Players</h4>
+    <player-editor ng-repeat="newPlayer in activeTeam.players" player="newPlayer"></player-editor>
     <br />
 
     <div class="row">
-      <div class="col-lg-9">
-        <button class="btn btn-info" ng-click="addPlayerToTeam()">Add Another Skater</button>
+      <div class="col-lg-6">
+        <button class="btn btn-info" ng-click="addPlayerToTeam()">Add Skater</button>
       </div>
-      <div class="col-lg-3">
-        <button class="btn btn-success" ng-click="saveNewTeam()">Save</button>
-        <a  href ng-click="cancelAddNewTeam()">Cancel</a>
+      <div class="col-lg-6">
+        <div class="pull-right">
+          <button class="btn btn-danger" ng-show="!activeTeamIsNew" ng-click="deleteTeam(activeTeam)">Remove</button>
+          <button class="btn btn-success" ng-click="saveNewTeam()">Save</button>
+          <a href ng-click="activeTeam = null">Cancel</a>
+        </div>
       </div>
     </div>
   </div>

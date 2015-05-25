@@ -8,36 +8,34 @@ angular.module('universalHockeyApp')
     });
 
     $scope.viewTeam = function(team) {
-      $scope.selectedTeam = team;
+      $scope.activeTeamIsNew = false;
+      $scope.activeTeam = angular.copy(team);
     };
 
     $scope.addNewTeam = function() {
-      $scope.selectedTeam = null;
-      $scope.newTeam = {
+      $scope.activeTeamIsNew = true;
+      $scope.activeTeam = {
         players: [{}]
       };
     };
 
     $scope.addPlayerToTeam = function () {
-      $scope.newTeam.players.push({});
+      $scope.activeTeam.players.push({});
     };
 
     $scope.saveNewTeam = function() {
-      TeamService.saveNewTeam($scope.newTeam).then(function() {
-        _.each($scope.newTeam.players, function(player){
-          PlayerService.saveNewPlayer(player, $scope.newTeam.id);
+      TeamService.saveNewTeam($scope.activeTeam).then(function() {
+        _.each($scope.activeTeam.players, function(player){
+          PlayerService.saveNewPlayer(player, $scope.activeTeam.id);
         });
-        delete $scope.newTeam;
-
+        delete $scope.activeTeam;
       });
-    };
-
-    $scope.cancelAddNewTeam = function () {
-      delete $scope.newTeam;
     };
 
     $scope.deleteTeam = function(team) {
       TeamService.deleteTeam(team);
       $scope.selectedTeam = null;
-    }
+    };
+
+    $scope.activeTeamIsNew = false;
   });
