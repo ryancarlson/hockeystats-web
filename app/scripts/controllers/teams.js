@@ -23,13 +23,22 @@ angular.module('universalHockeyApp')
       $scope.activeTeam.players.push({});
     };
 
-    $scope.saveNewTeam = function() {
-      TeamService.saveNewTeam($scope.activeTeam).then(function() {
-        _.each($scope.activeTeam.players, function(player){
-          PlayerService.saveNewPlayer(player, $scope.activeTeam.id);
-        });
-        delete $scope.activeTeam;
+    $scope.saveTeam = function() {
+      if ($scope.activeTeamIsNew) {
+        TeamService.saveNewTeam($scope.activeTeam).then(function () {
+          delete $scope.activeTeam;
+          TeamService.loadAll().then(function (teams) {
+            $scope.teams = teams;
+          });
       });
+      } else {
+        TeamService.updateTeam($scope.activeTeam).then(function () {
+          TeamService.loadAll().then(function (teams) {
+            $scope.teams = teams;
+            delete $scope.activeTeam;
+          });
+        });
+      }
     };
 
     $scope.deleteTeam = function(team) {
