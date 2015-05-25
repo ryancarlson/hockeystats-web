@@ -1,0 +1,52 @@
+<div class="header">
+    <h3 class="text-muted">HockeyStats</h3>
+</div>
+
+<div>
+  <div class="row">
+    <div class="col-lg-9">
+      <h4> Current Teams</h4>
+    </div>
+    <div class="col-lg-3">
+      <button class="btn btn-success pull-right" ng-click="addNewTeam()">Add Team</button>
+    </div>
+  </div>
+
+  <div class="list-group">
+    <a href ng-repeat="team in teams | orderBy: ['league','name']"
+        ng-click="viewTeam(team)"
+        class="list-group-item">{{team.league}} - {{team.name}}</a>
+  </div>
+
+  <br />
+
+  <div ng-show="activeTeam">
+    <h4>Team Information</h4>
+    <div class="form-group">
+      <label>Name</label>
+      <input class="form-control" type="text" ng-model="activeTeam.name"/>
+    </div>
+
+    <div class="form-group">
+      <label>League</label>
+      <input class="form-control" type="text" ng-model="activeTeam.league"/>
+    </div>
+
+    <h4>Players</h4>
+    <player-editor ng-repeat="newPlayer in activeTeam.players" player="newPlayer"></player-editor>
+    <br />
+
+    <div class="row">
+      <div class="col-lg-6">
+        <button class="btn btn-info" ng-click="addPlayerToTeam()">Add Skater</button>
+      </div>
+      <div class="col-lg-6">
+        <div class="pull-right">
+          <button class="btn btn-danger" ng-show="!activeTeamIsNew" ng-click="deleteTeam(activeTeam)">Remove</button>
+          <button class="btn btn-success" ng-click="saveNewTeam()">Save</button>
+          <a href ng-click="activeTeam = null">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
